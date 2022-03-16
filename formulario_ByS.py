@@ -230,7 +230,7 @@ def rellenar(datos, num_fila, id_inicial):
 
     # Aporte de otros
     campo_aport_otros = driver.find_element(By.ID, f"float{id_inicial+11}")
-    campo_aport_otros.send_keys('0')
+    campo_aport_otros.send_keys(str(datos["Aporte de otros"][num_fila]))
     campo_aport_otros.send_keys(Keys.ENTER)
     sleep(1)
 
